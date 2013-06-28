@@ -1,18 +1,16 @@
-# Scenario 1: application user transactions and summary.
+# Scenario 1: brief description of this test scenario: aim, resources involved etc.
 
 # Configuration variables
 server http://127.0.0.1:6542
-application_id 1234
-user_id 1
+resource_id 1234
+subresource_id 1
 
 # Number of times following test scenario will be repeated
 repeat 10
 
 # Requests
-GET 1 /applications/{application_id}/users/{user_id}
-GET 1 /applications/{application_id}/users/{user_id}/summary
-POST 1 /applications/{application_id}/users/{user_id}/transactions amount=1 virtual_good_id=10 id={rint}
-GET 1 /applications/{application_id}/users/{user_id}/summary
-PUT 1 /applications/{application_id}/users/1 email={rstr} oauth_token={rstr} oauth_token_expires=10.0
-GET 3 /applications/{application_id}/users/{user_id}/summary
-GET 4 /applications/{application_id}/users/{user_id}
+GET 1 /resource/{resource_id}/subresource/{subresource_id}
+POST 1 /resource/{resource_id}/subresource/{subresource_id}/transactions name=test id={rint}
+GET 1 /resource/{resource_id}/subresource/{subresource_id}/summary
+PUT 1 /resource/{resource_id}/subresource/1 email={rstr} token={rstr} expires=10.0
+GET 3 /resource/{resource_id}/subresource/{subresource_id}/summary

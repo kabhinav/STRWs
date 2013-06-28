@@ -29,6 +29,7 @@ $ python strws.py scenario.txt
 
 Example: scenario.txt
 _____________________
+```
 # Scenario 1: brief description of this test scenario: aim, resources involved etc.
 
 # Configuration variables
@@ -45,7 +46,7 @@ POST 1 /resource/{resource_id}/subresource/{subresource_id}/transactions name=te
 GET 1 /resource/{resource_id}/subresource/{subresource_id}/summary
 PUT 1 /resource/{resource_id}/subresource/1 email={rstr} token={rstr} expires=10.0
 GET 3 /resource/{resource_id}/subresource/{subresource_id}/summary
-
+```
 
 Output
 ------
@@ -59,4 +60,4 @@ Hit | Miss       | 0 | 0
 Uncached         | 100
 -------------------------
 Time             1.45 secs
-```bash
+```

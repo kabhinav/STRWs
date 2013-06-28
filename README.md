@@ -3,12 +3,11 @@ STRWs
 
 STRWs: Scenario Tester for ReSTful WebSevices
 
-In the requests declaration of a scenario, {var} represents a variable with random value.
+In the requests declaration of a scenario, {var} represents a variable with random value.  
 The types of a variable are:
-<br>{rint} represents a random integer variable.
-<br>{rstr} represents a random string variable.
-<br>{print} represents persistent random integer whose value remain same across multiple requests.
-
+1. {rint} represents a random integer variable.
+2. {rstr} represents a random string variable.
+3. {print} represents persistent random integer whose value remain same across multiple requests.  
 All variables are  substituted with the values, either computed randomly or retrieved from
 persisted source before making a HTTP request.
 

@@ -1,7 +1,7 @@
 STRWs
 =====
 
-STRWs: Scenario Tester for ReSTful WebSevices
+STRWs: Scenario(s) Tester for ReSTful WebSevices
 
 In the requests declaration of a scenario, {var} represents a variable with random value.  
 The types of a variable are:
